@@ -130,14 +130,4 @@ fluent-mern/
 
 ---
 
-## 📄 Resume Description
-
-**FluentAI — AI-Powered English Learning Platform**
-
-> Full-stack MERN application with JWT + Google OAuth authentication, AI-generated learning content via Groq API (Llama 3.3 70B), real-time speech recognition, audio recording, and Google AdSense integration.
-
-**Tech:** React.js, Node.js, Express.js, MongoDB, Passport.js, JWT, Groq API, Web Speech API, MediaRecorder API, CSS3
-
----
-
 Built with ❤️ using MERN Stack + Groq AI

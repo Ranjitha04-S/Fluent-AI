@@ -92,48 +92,6 @@ Open: **http://localhost:3000**
 
 ---
 
-## 📢 Google AdSense Setup
-
-1. Apply at [adsense.google.com](https://adsense.google.com) with your live domain
-2. Wait for approval (1-2 weeks)
-3. Get your Publisher ID (ca-pub-XXXXXXXX)
-4. In `client/public/index.html`, uncomment and update the AdSense script
-5. Replace `<div className="ad-banner">` placeholders in each page with `<ins>` tags
-
----
-
-## 🌐 Deployment (Free Options)
-
-### Option A: Render.com (Recommended)
-1. Push code to GitHub
-2. Create a new Web Service on [render.com](https://render.com)
-3. Set root directory to `server`, build command: `npm install`
-4. Add all environment variables
-5. Deploy client to [netlify.com](https://netlify.com) or [vercel.com](https://vercel.com)
-
-### Option B: Railway.app
-1. Connect GitHub repo
-2. Add environment variables
-3. Deploy both server and client
-
-### Option C: VPS (DigitalOcean/Hostinger)
-```bash
-# Install PM2
-npm install -g pm2
-
-# Build client
-cd client && npm run build
-
-# Serve client with Express (add to server/index.js)
-app.use(express.static(path.join(__dirname, '../client/build')));
-app.get('*', (req, res) => res.sendFile(path.join(__dirname, '../client/build/index.html')));
-
-# Start with PM2
-pm2 start server/index.js --name fluentai
-```
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -169,16 +127,6 @@ fluent-mern/
             ├── StudioPage.js
             └── SettingsPage.js
 ```
-
----
-
-## 📄 Resume Description
-
-**FluentAI — AI-Powered English Learning Platform**
-
-> Full-stack MERN application with JWT + Google OAuth authentication, AI-generated learning content via Groq API (Llama 3.3 70B), real-time speech recognition, audio recording, and Google AdSense integration.
-
-**Tech:** React.js, Node.js, Express.js, MongoDB, Passport.js, JWT, Groq API, Web Speech API, MediaRecorder API, CSS3
 
 ---
 
